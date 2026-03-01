@@ -23,10 +23,12 @@ export function FloatingNavbar() {
                 width="1.75em"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <title>PromptCraft</title>
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+                <title>Тукай</title>
+                <path d="M12 3C12 3 8 6 8 10C8 12.2 9.8 14 12 14C14.2 14 16 12.2 16 10C16 6 12 3 12 3Z" stroke="currentColor" fill="none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M5 21C5 17.5 8 15 12 15C16 15 19 17.5 19 21" stroke="currentColor" fill="none" strokeWidth="1.5" strokeLinecap="round"/>
+                <path d="M3 10H5M19 10H21M12 2V1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
               </svg>
-              <span className="font-semibold text-lg font-open-sans-custom tracking-tight">PromptCraft</span>
+              <span className="font-semibold text-lg font-open-sans-custom tracking-tight">Тукай</span>
             </div>
           </button>
 
@@ -36,19 +38,19 @@ export function FloatingNavbar() {
               onClick={() => scrollToSection("features")}
               className="text-sm font-open-sans-custom text-gray-300 transition-colors hover:text-white [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)]"
             >
-              Функции
+              Возможности
             </button>
             <button
               onClick={() => scrollToSection("pricing")}
               className="text-sm font-open-sans-custom text-gray-300 transition-colors hover:text-white [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)]"
             >
-              Тарифы
+              Разделы
             </button>
             <button
               onClick={() => scrollToSection("about")}
               className="text-sm font-open-sans-custom text-gray-300 transition-colors hover:text-white [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)]"
             >
-              О нас
+              О поэте
             </button>
             <button
               onClick={() => scrollToSection("contact")}
@@ -63,7 +65,7 @@ export function FloatingNavbar() {
             size="sm"
             className="bg-white text-black hover:bg-gray-100 [text-shadow:_0_1px_2px_rgb(0_0_0_/_10%)] font-open-sans-custom"
           >
-            Начать
+            Читать стихи
           </Button>
         </div>
       </div>
