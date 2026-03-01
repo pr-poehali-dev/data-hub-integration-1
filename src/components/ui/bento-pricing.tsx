@@ -16,9 +16,9 @@ type PricingCardProps = {
 function PricingCard({
   titleBadge,
   priceLabel,
-  priceSuffix = "/мес",
+  priceSuffix = "/ай",
   features,
-  cta = "Подписаться",
+  cta = "Язылырга",
   className,
 }: PricingCardProps) {
   return (
@@ -49,7 +49,7 @@ function PricingCard({
         <span className="font-mono text-3xl font-semibold tracking-tight text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)]">
           {priceLabel}
         </span>
-        {priceLabel.toLowerCase() !== "бесплатно" && priceLabel !== "0 ₽" && (
+        {priceLabel.toLowerCase() !== "бушлай" && priceLabel !== "0 ₽" && (
           <span className="text-gray-300 text-xs font-open-sans-custom">{priceSuffix}</span>
         )}
       </div>
@@ -91,32 +91,32 @@ export function BentoPricing() {
         </div>
         <div className="flex items-center gap-3 p-3">
           <Badge variant="secondary" className="bg-white/10 text-white border-white/20 font-open-sans-custom text-xs">
-            ПОДРОСТКИ 11–16 ЛЕТ
+            ҮСМЕРЛӘР 11–16 ЯШЬ
           </Badge>
           <Badge
             variant="outline"
             className="hidden lg:flex bg-white/5 text-white border-white/20 font-open-sans-custom text-xs"
           >
-            <SparklesIcon className="me-1 size-3" /> Популярный раздел
+            <SparklesIcon className="me-1 size-3" /> Популяр бүлек
           </Badge>
           <div className="ml-auto">
             <Button size="sm" className="bg-white text-black hover:bg-gray-100 font-open-sans-custom text-xs">
-              Начать
+              Башларга
             </Button>
           </div>
         </div>
         <div className="flex flex-col p-3 lg:flex-row">
           <div className="pb-2 lg:w-[30%]">
             <span className="font-mono text-3xl font-semibold tracking-tight text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)]">
-              11–16 лет
+              11–16 яшь
             </span>
           </div>
           <ul className="text-gray-300 grid gap-2 text-xs lg:w-[70%] font-open-sans-custom">
             {[
-              "Глубокий анализ произведений Тукая",
-              "Сравнение с мировой поэзией",
-              "Исследовательские задания",
-              "Викторины и кроссворды по текстам",
+              "Тукай әсәрләрен тирән анализлау",
+              "Дөнья поэзиясе белән чагыштыру",
+              "Тикшеренү биремнәре",
+              "Текстлар буенча викториналар һәм кроссвордлар",
             ].map((f, i) => (
               <li key={i} className="flex items-center gap-2">
                 <Check className="w-[1.05rem] h-[1.05rem] text-white flex-shrink-0" strokeWidth={3} />
@@ -128,53 +128,53 @@ export function BentoPricing() {
       </div>
 
       <PricingCard
-        titleBadge="ДЕТИ 6–10 ЛЕТ"
-        priceLabel="6–10 лет"
+        titleBadge="БАЛАЛАР 6–10 ЯШЬ"
+        priceLabel="6–10 яшь"
         priceSuffix=""
         features={[
-          "Простые стихи с яркими иллюстрациями",
-          "Аудиосказки по мотивам произведений",
-          "Игровые задания с анимацией",
-          "Мини-игры на запоминание",
+          "Яркы иллюстрацияле гади шигырьләр",
+          "Әсәрләр буенча аудио әкиятләр",
+          "Анимацияле уен биремнәре",
+          "Ятлауга мини-уеннар",
         ]}
         className="lg:col-span-3"
-        cta="Начать"
+        cta="Башларга"
       />
 
       <PricingCard
-        titleBadge="ТВОРЧЕСКАЯ МАСТЕРСКАЯ"
-        priceLabel="Для всех"
+        titleBadge="ИҖАДИ ОСТАЛЫКХАНӘ"
+        priceLabel="Барысына да"
         priceSuffix=""
         features={[
-          "Написание собственных стихов",
-          "Рисование иллюстраций к произведениям",
-          "Запись аудио с декламацией",
+          "Үз шигырьләреңне язу",
+          "Әсәрләргә иллюстрацияләр ясау",
+          "Тавыш яздыру",
         ]}
         className="lg:col-span-4"
-        cta="Творить"
+        cta="Иҗат итәргә"
       />
 
       <PricingCard
-        titleBadge="ВЗРОСЛЫЕ И ПЕДАГОГИ"
-        priceLabel="Академический"
+        titleBadge="ӨЛКӘННӘР ҺӘМ УКЫТУЧЫЛАР"
+        priceLabel="Академик"
         priceSuffix=""
-        features={["Академические материалы и критические статьи", "Научные исследования творчества", "Интеграция с образовательными платформами"]}
+        features={["Академик материаллар һәм тәнкыйди мәкаләләр", "Иҗатны фәнни тикшеренү", "Белем бирү платформалары белән интеграция"]}
         className="lg:col-span-4"
-        cta="Изучить"
+        cta="Өйрәнергә"
       />
 
       <PricingCard
         titleBadge="ФОРУМ"
-        priceLabel="Сообщество"
+        priceLabel="Тупланма"
         priceSuffix=""
         features={[
-          "Обсуждение произведений с другими читателями",
-          "Обмен достижениями и творческими работами",
-          "Система уведомлений о новых материалах",
-          "Социальные функции для школьников",
+          "Башка укучылар белән әсәрләрне тикшерү",
+          "Уңышлар һәм иҗади эшләр белән уртаклашу",
+          "Яңа материаллар турында хәбәрләндерү системасы",
+          "Мәктәп укучылары өчен социаль функцияләр",
         ]}
         className="lg:col-span-8"
-        cta="Присоединиться"
+        cta="Кушылырга"
       />
     </div>
   )

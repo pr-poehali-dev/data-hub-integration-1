@@ -159,18 +159,18 @@ export default function Index() {
           <div className="mx-auto max-w-4xl">
             <div className="text-center px-0 leading-5">
               <h1 className="mb-8 text-balance text-5xl tracking-tight text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)] md:text-6xl lg:text-8xl">
-                <span className="font-open-sans-custom not-italic">Читай.</span>{" "}
-                <span className="font-serif italic">Познавай.</span>{" "}
-                <span className="font-open-sans-custom not-italic">Твори.</span>
+                <span className="font-open-sans-custom not-italic">Укы.</span>{" "}
+                <span className="font-serif italic">Бел.</span>{" "}
+                <span className="font-open-sans-custom not-italic">Иҗат ит.</span>
               </h1>
 
               <p className="mb-8 mx-auto max-w-2xl text-pretty leading-relaxed text-gray-300 [text-shadow:_0_2px_10px_rgb(0_0_0_/_50%)] font-thin font-open-sans-custom tracking-wide leading-7 text-xl">
-                интерактивная платформа по творчеству Габдуллы Тукая — стихи, викторины, мастерская{" "}
-                <span className="font-serif italic">для школьников и подростков</span>
+                Габдулла Тукай иҗатына багышланган интерактив платформа — шигырьләр, викториналар, осталыкханә{" "}
+                <span className="font-serif italic">мәктәп укучылары һәм үсмерләр өчен</span>
               </p>
 
               <div className="flex justify-center">
-                <ShinyButton className="px-8 py-3 text-base">начать изучение</ShinyButton>
+                <ShinyButton className="px-8 py-3 text-base">өйрәнүне башларга</ShinyButton>
               </div>
             </div>
           </div>
@@ -201,10 +201,10 @@ export default function Index() {
           <div className="relative z-10 mx-auto w-full max-w-5xl">
             <div className="mx-auto mb-10 max-w-2xl text-center">
               <h1 className="text-4xl font-extrabold tracking-tight lg:text-6xl text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)] font-open-sans-custom">
-                Разделы для всех
+                Барысы өчен бүлекләр
               </h1>
               <p className="text-gray-300 mt-4 text-sm md:text-base font-open-sans-custom [text-shadow:_0_2px_10px_rgb(0_0_0_/_50%)]">
-                Платформа адаптирована под разные возрасты — каждый найдёт свой путь к поэзии Тукая.
+                Платформа төрле яшьтәгеләр өчен яраклаштырылган — һәркем Тукай поэзиясенә үз юлын табачак.
               </p>
             </div>
             <BentoPricing />
@@ -230,10 +230,10 @@ export default function Index() {
           <div className="relative z-10 mx-auto w-full max-w-7xl">
             <div className="mx-auto mb-10 max-w-2xl text-center">
               <h1 className="text-4xl font-extrabold tracking-tight lg:text-6xl text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)] font-open-sans-custom">
-                О Тукае
+                Тукай турында
               </h1>
               <p className="text-gray-300 mt-4 text-sm md:text-base font-open-sans-custom [text-shadow:_0_2px_10px_rgb(0_0_0_/_50%)]">
-                Жизнь и творчество великого татарского поэта — голос народа, живущий в веках.
+                Бөек татар шагыйренең тормышы һәм иҗаты — гасырлар буе яшәүче халык тавышы.
               </p>
             </div>
             <AboutQuote />
@@ -257,12 +257,12 @@ export default function Index() {
 
           <div className="relative z-10 mx-auto w-full max-w-5xl mt-[5vh]">
             <ContactCard
-              title="Напишите нам"
-              description="Есть вопросы о платформе, предложения по контенту или хотите сотрудничать? Заполните форму — ответим в течение 1 рабочего дня."
+              title="Безгә языгыз"
+              description="Платформа турында сорауларыгыз, контент буенча тәкъдимнәрегез яки хезмәттәшлек итергә телисезме? Формны тутырыгыз — 1 эш көне эчендә җавап бирербез."
               contactInfo={[
                 {
                   icon: MailIcon,
-                  label: "Почта",
+                  label: "Электрон почта",
                   value: "hello@tukay.edu",
                 },
                 {
@@ -273,7 +273,7 @@ export default function Index() {
                 {
                   icon: MapPinIcon,
                   label: "Адрес",
-                  value: "Казань, Татарстан",
+                  value: "Казан, Татарстан",
                   className: "col-span-2",
                 },
               ]}
@@ -281,7 +281,7 @@ export default function Index() {
               <form action="" className="w-full space-y-4">
                 <div className="flex flex-col gap-2">
                   <Label className="text-white [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)] font-open-sans-custom">
-                    Имя
+                    Исем
                   </Label>
                   <Input
                     type="text"
@@ -299,7 +299,7 @@ export default function Index() {
                 </div>
                 <div className="flex flex-col gap-2">
                   <Label className="text-white [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)] font-open-sans-custom">
-                    Телефон
+                    Телефон номеры
                   </Label>
                   <Input
                     type="tel"
@@ -308,7 +308,7 @@ export default function Index() {
                 </div>
                 <div className="flex flex-col gap-2">
                   <Label className="text-white [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)] font-open-sans-custom">
-                    Сообщение
+                    Хәбәр
                   </Label>
                   <Textarea className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)]" />
                 </div>
@@ -316,7 +316,7 @@ export default function Index() {
                   className="w-full bg-white text-black hover:bg-gray-100 [text-shadow:_0_1px_2px_rgb(0_0_0_/_10%)] font-open-sans-custom"
                   type="button"
                 >
-                  Отправить
+                  Җибәрергә
                 </Button>
               </form>
             </ContactCard>
